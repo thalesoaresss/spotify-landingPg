@@ -1,0 +1,181 @@
+/*------------------------------- GERAL -------------------------------*/
+html, body, #home{
+    height: 100%;
+    overflow-x: hidden;
+}
+body{
+    background: url(../imagens/capa.png) , url(../imagens/ruido.png), linear-gradient(50deg,#ff4169,#7c26f8);
+    background-attachment: fixed;
+    font-family: Helvetica,Arial,sans-serif;
+}
+h2{
+    font-size: 3.2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+h3{
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+/*------------------------------- NAVEGACAO TOPO -------------------------------*/
+nav.navbar-transparente{
+    background: rgba(0,0,0,0.7);
+    padding: 15px 0px;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #23CF5F;
+}
+.navbar-light .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: rgba(255,255,255,.1);
+}
+.divisor{
+    width: 1px;
+    background: #fff;
+    margin: 12px 15px;
+}
+/*------------------------------- CAPA -------------------------------*/
+#home h1{
+    font-weight: 1400;
+    letter-spacing: -0.08em;
+    margin-bottom: 50px;
+    color: #fff;
+}
+.capa{
+    text-align: center;
+}
+.btn-custom{
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s; 
+    padding: 10px 20px;
+}
+.btn-purple{
+    background:#7c25f8;
+}
+.btn-purple:hover{
+    background:#6207e3;
+    color: white;
+}
+.btn-white{
+    border: 2px solid white;
+}
+.btn-white:hover{
+    background: white;
+    color: black;
+}
+.carousel-control-prev, .carousel-control-next{
+    width: 2%;
+}
+/*------------------------------- SERVICOS -------------------------------*/
+section#servicos{
+    background: #fff;
+    padding: 20px 0px;
+}
+section#servicos p{
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+.albuns{
+    padding: 20px 0px;
+}
+.roxo{
+    color: #7E1BF8;
+}
+/*------------------------------- RECURSOS -------------------------------*/
+section#recursos{
+    padding: 20px 0px;
+}
+.azul-claro{
+    color: #9bf0e1;
+}
+section#recursos p{
+    color: #fff;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+.rotacionar{
+    transform: rotate(30deg);
+    padding-left: 80px;
+}
+/*------------------------------- FOOTER -------------------------------*/
+footer{
+    background: black;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+    z-index: 1;
+}
+footer h4{
+    color: #919496;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+footer .navbar-nav a{
+    color: #fff;
+    font-size: 0.8em;
+}
+footer .navbar-nav a:hover{
+    color: #23CF5F;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    float: right;
+    margin: 0 5px;
+}
+/*------------------------------- MEDIA QUERIES -------------------------------*/
+@media (max-width: 575.98px) {
+    #home h1{
+        font-size: 3em;
+    }
+    .btn-custom{
+        margin: 10px 0px;
+        font-size: 1.2em;
+    }
+    .rotacionar2{
+        transform: rotate(0deg);
+        margin: auto;
+        padding-right: 80px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #home h1{
+        font-size: 5em;
+    }
+    .btn-custom{
+        margin: 10px 0px;
+    }
+    .size{
+        width: 50%;
+    }
+    .rotacionar2{
+        transform: rotate(0deg);
+        margin: auto;
+        padding-right: 80px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #home h1{
+        font-size: 5em;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #home h1{
+        font-size: 6em;
+    }
+}
+@media (min-width: 1200px) {
+    #home h1{
+        font-size: 7em;
+    }
+}
